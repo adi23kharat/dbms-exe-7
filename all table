@@ -1,0 +1,133 @@
+create table epfy
+(eno number(3)primary key,
+ename varchar2(15),
+sal number(10),
+gender varchar2(6),
+addr varchar2(15)
+);
+
+Insert all 
+Into epfy values(1,’Samir’,35000,’Male’,’Satara’)
+Into epfy values(2,’Revati’,55000,’Female’,’Nagar’)
+Into epfy values(3,’Abhiram’,50000,’Male’,’Baramati’)
+Into epfy values(4,’Komal’,45000,’Female’,’Pune’);
+Into epfy values(5,’Anita’,37000,’Female’,’Mumbai’);
+Into epfy values(6,’Samir’,25000,’Male’,’Pune’);
+
+create table prfy23
+(pno number(3)primary key,
+pname varchar2(15),
+control varchar2(15),
+budget number(10)
+);
+Insert all 
+into prfy23 values( I , 'ERP', 'Account', 120000)
+into prfy23 values(2, 'SAP', 'Account',220000)
+into prfy23 values(3,'Work Capital', 'Finance', 1200000)
+into prfy23 values (4, 'Capital', 'Finance',400000)
+into prfy23 values (5, 'Al', 'Computer', 20000000)
+into prfy23 values (6, 'ML', 'Computer', 10000000)
+select * from dual;
+ 
+create table dptfy23
+(dno number(3)primary key,
+dname varchar2(15)):
+insert all
+into dptfy23 values(101 ,'Account')
+into dptfy23 values( 102,'Finance')
+into dptfy23  values( 103,'Sales')
+into dptfy23  values( 104,'lnventory')
+into dptfy23 values( 105,'Computer')
+select * from dual;
+
+create table wonfy100
+(eno number(3)references epfy(eno) on delete cascade,
+pno number(3)references prfy23(pno)on delete cascade,
+dno number(3)references dptfy23(dno) on delete cascade,
+hrs number(2)
+);
+
+insert into wonfy23 values( 1, 1,101 ,8)
+insert into wonfy23 values(2, 1,101 ,2)
+insert into wonfy23 values(3,3, 103,8)
+insert into wonfy23 values(4,3, 103,2)
+insert into wonfy23 values(5,3, 105,2)
+insert into wonfy23 values(6,4, 104,8)
+insert into wonfy23 values(6,5, 105,2)
+insert into wonfy23 values(5,5, 105,2)
+insert into wonfy23 values(6,5, 105,2)
+insert into wonfy23 values(4,5, 105, 12);
+
+
+create table movfy23
+(mno number(3)primary key,
+mname varchar2(15),
+ryr number(4) ,
+budget number(10)
+);
+
+insert all
+into movfy23 values( 1 ,Dil', 1995,20000000)
+into movfylOO values(2.'DDLG', 1986, 100000000)
+into movfylOO values(3,'K3G', 2011, 300000000)
+into movfylOO values(4,'K2H2', 2010, 3500000000)
+into movfylOO values(5,'Devdas', 2009, 4100000000)
+into movfylOO values(6,'Krish', 2005, 520000000)
+
+create table actfy23
+(ano number(3)primary key,
+aname varchar2(15),
+role varchar2(15) ,
+charge number(varchar2(15),
+addr varchar2(15)
+);
+
+insert all
+into actfy23 values(1,’Shahrukh’,’Lead’,3000000,’Mumbai’)
+into actfy23 values(2,’Amir khan’,’Lead’,4000000,’Mumbai’)
+
+into actfy23 values(3,’Hrithik roshan’,’Lead’,2000000,’Mumbai’)
+into actfy23 values(4,’Priti zinta’,’Actress’,2000000,’Mumbai’)
+into actfy23 values(5,’Amrish puri’,’Villain’,25000000,’Mumbai’)
+into actfy23 values(6,’Kajol’,’Actress’,3000000,’Mumbai’)
+into actfy23 values(7,’Anupam kher’,’Father’,3500000,’Mumbai’)
+select * from dual;
+
+create table prodfy23
+(pid number(3)primary key,
+pname varchar2( 15),
+paddr varchar2(15)
+);
+insert all
+into prodfy23 values(l1,'lndra Kumar','Mumbai')
+into prodfy23 values(2,‘Yash Chopra','Mumbai')
+into prodfy23 values(3,’Yash Johar','Mumbai')
+into prodfy23 values(4,’Bharat Shaha','Mumbai')
+into prodfy23 values(5,'Rakesh Roshan','Mumbai')
+select * from dual;
+
+create table mapfy23
+mno number(3)references movfy23(mno)ON DELETE CASCADE,
+ano number(3)references actfy23(ano)ON DELETE CASCADE,
+pid number(3)references prodfy23(pid) ON DELETE CASCADE
+);
+insert all
+into mapfy23 values(1,2, 1)
+into mapfy23 values(1,7,6)
+into mapfy23 values(2,1,2)
+into mapfy23 values(2,5,2)
+into mapfy23 values(2,6,2)
+into mapfy23 values(3,1,3)
+into mapfy23 values(3,3,3)
+into mapfy23 values(3,5,3)
+into mapfy23 values(4,1,3)
+into mapfy23 values(4,5,3)
+into mapfy23 values(5,1,4)
+into mapfy23 values(6,3,5)
+select * from dual;
+ 
+into actfy23 values(1,’Shahrukh’,’Lead’,3000000,’Mumbai’)
+
+
+
+
