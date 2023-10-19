@@ -1,0 +1,108 @@
+1)select prsn23.pname from prsn23,areafy100 where
+prsn23ano=areafy100.ano and areafy100.atype='Rural':
+PNAME
+Vishal
+Shekhar
+Surai
+Sarfrai
+Rahul
+Nilesh
+
+2)select from personfy100 where pname like
+MAX(PNAME)
+Vyanktesh
+OR
+select from persfy41 where pname like'V%' group by pname
+having pname=
+(select max(pname) from persfy41
+LENGTH(PNAME) PNAME
+10
+Vyankatesh
+
+3 )select pname FROM prsn23 WHERE
+select pname FROM prsn23 WHERE
+select pname FROM prsn23WHERE 12;
+PNAME
+Vishal
+Shekhar
+Sarfraj
+
+4) select count(pname) as Born_On_Same_Day from prsn23WHERE to_char(dob ,’dd’)=12;
+5) select count(pname) as Below_lncome from prsn23 where income<30000;
+BELOW_INCOME
+
+6)select pname from prsn23 where income between 35000 and 55000:
+PNAME
+Shekhar
+Sartaj
+Rahul
+Ajay
+Dipak
+
+7)select avg(distinct income).pname from prsn23 group by pname;
+
+8)select prsn23,ateafy100 where
+personfyl 00.ano=areafy100.ano and
+SUM(PERSONFYIOO.INCOME)
+
+9)select from prsn2300.areafy100
+where personfy100.ano•areafy100.ano group by areafy100.aname having
+areafy 100. anamee' Pune';
+MAX(PERSONFYIOO.INCOME) ANAME
+Pune
+OR
+select areafy 100 an ame. personfv 1 00, pname,personfy 100.income from
+personfy 1 OOrareafy100 where personfy 100.ano=oreaty 100.ano
+and personfy 100.income
+(select max(personfy100.income) from personfy100,areafy100 where
+personfyl and areafyl );
+
+
+IO)
+10)select OO.aname from
+personty100.areafy100 where peßonfy100.ano=areafy100.ano group by
+areaty100-aname;
+
+11)select areatyl 00.aname.personfy100.pname,personfy 100.income.areafy 100.atype
+from. personfy100.areaty100 where personty100.an0—areafy100.anO
+and personfy100.income •
+(select maxlpersontylCO.incomel from personfylOO.areafylOO where
+personty 100. ono=areafy 100. ano
+ond areafy 1m.atypelAUrban• r,
+
+12)select • from areafy100.persorty100 where order by
+persontyl 00 .pno:
+ANO ANAME
+ATYPE PNO PNAME
+BDATE
+INCOME ANO
+
+13)select personfyl from areafy100.personfy100 where
+areafyl 00.ano•personfy100.ano order by areafy100.anamewpersonfy100.pname:
+ANAME
+
+14)select from areafy100,personfy100 where
+areafy 100.ano•personfy 100.ano :
+MIN(PERSONFYIOO.INCOME)
+25000
+OR
+select min(personfyl 00.atype from areafyl 00,persontYI 00 Where
+areafy100.ano=personfyIOO.ano group by areafy100.atype having
+areafyl
+MIN(PERSONFYIOO.INCOME) ATYPE
+Rural
+OR
+select min(personfyl 00. atype from areafyl 00,personfy100 where
+areafy100.ano=personfy100.ano group by areafyIOO.atype having
+MIN(PERSONFYIOO.INCOME) ATYPE
+Urban
+
+15)
+update areafy100 set anamez'Mumbai' where aname='Pune•;
+select • from areafy100 where aname='Mumbai'•.
+
+
+16)delete from areafyl 00 where atype-'Urban':
+4 row(s) deleted.
+select • from areafy100;
+===================================================================================
