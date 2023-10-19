@@ -1,0 +1,375 @@
+1)select prsn23.pname from prsn23,area23. where
+prsn23.ano=area23.ano and area23.atype='rural':
+
+2)select from prsn23 where pname like ‘A%’;
+OR
+select from prsn23 where pname like'A%' group by pname
+having pname=
+(select max(pname) from prsn23
+LENGTH(PNAME) PNAME
+
+
+3 )select pname FROM prsn23 WHERE
+select pname FROM prsn23 WHERE
+select pname FROM prsn23 WHERE 12;
+PNAME
+Vishal
+Shekhar
+Sarfraj
+
+4) select count(pname) as Born_On_Same_Day from prsn23 WHERE to_char(dob ,’dd’)=12;
+5) select count(pname) as Below_lncome from prsn23 where income<30000;
+BELOW_INCOME
+
+6)select pname from prsn23 where income between 35000 and 55000;
+PNAME
+Shekhar
+Sartaj
+Rahul
+Ajay
+Dipak
+
+7)select avg(distinct income).pname from prsn23 group by pname;
+
+8)select sum(prsn23.income)from prsn23,area23 where prsn23.ano=area23.ano and area23.aname=’pune’;
+
+
+9) select max(prsn23.income),area23.aname from prsn23,area23
+where prsn23.ano=area23.ano group by area23.aname having
+area23.aname='Pune';
+OR
+select areafy 100 an am. prsn23, pname, prsn23.income from
+personfy 1 OOrareafy100 where personfy 100.ano=oreaty 100.ano
+and personfy 100.income
+(select max(personfy100.income) from personfy100,areafy100 where
+personfyl and areafyl );
+
+
+10) select count(prsn23.pname)as from
+prsn23,area23 where prsn23.ano=area23.ano group by
+area23.aname;
+
+11) select areafyl 00.aname,personfy100. pname,personfyl 00.income,areafyI 00.atype
+from personfy100,areafy100 where personfy100.ano=areafy100.ano
+and personfy100.income =
+(select max(personfy100.income) from personfyl 00,areafylOO where
+personfyl 00.ano=areafyl 00.ano
+and )
+;12)select • from areafy100.persorty100 where order by
+persontyl 00 .pno:
+ANO ANAME
+ATYPE PNO PNAME
+BDATE
+INCOME ANO
+
+13)select personfyl from areafy100.personfy100 where
+areafyl 00.ano•personfy100.ano order by areafy100.anamewpersonfy100.pname:
+ANAME
+
+14)select from areafy100,personfy100 where
+areafy 100.ano•personfy 100.ano :
+MIN(PERSONFYIOO.INCOME)
+25000
+OR
+select min(personfyl 00.atype from areafyl 00,persontYI 00 Where
+areafy100.ano=personfyIOO.ano group by areafy100.atype having
+areafyl
+MIN(PERSONFYIOO.INCOME) ATYPE
+Rural
+OR
+select min(personfyl 00. atype from areafyl 00,personfy100 where
+areafy100.ano=personfy100.ano group by areafyIOO.atype having
+MIN(PERSONFYIOO.INCOME) ATYPE
+Urban
+
+15)
+update areafy100 set anamez'Mumbai' where aname='Pune•;
+select • from areafy100 where aname='Mumbai'•.
+
+
+16)delete from areafyl 00 where atype-'Urban':
+4 row(s) deleted.
+select • from areafy100;
+===================================================================================
+
+
+
+create table efy100
+(eno number(3)primary key.
+ename varchar2(15).
+sal number(10),
+gender varchar2(6),
+addr varchar2(15));
+insert all
+into efy1CO values( 1
+into efyl 00 'Nagar J
+into efy 100 values13,
+into efy 100 values14„ 'Komal'
+into efy 100
+into efy 100 values(6, Sami'
+select • from dual;
+select • from efylOO;
+
+
+create table prfy100
+(pno key,
+pname varchar2( 15),
+control varchar2(15),
+budget number( 10)):
+insert all
+into prfylOO values( 'Account', 120000)
+into pdylOO
+into prfy 100 values(3. 'Work Capital', Finance', 1200000)
+info prfyl 00 values(4. 'Capital', 'Finance', 400000)
+into prfylCO values(S Computed .20000000)
+into prfylCO values(6.'ML'.'Computer'.10000000)
+select • from dual:
+Department(dno.dname)
+create table dptfy100
+(dno
+key.
+dnarne varchar2(lS));
+Insett an
+into dptfy100 values(
+into dptfYIOO values(102Finance'J
+into dptfYIOO values(
+into dptfYlOO
+into dptfytco
+select • from dual:
+select • from dpffy100:
+
+
+create table wonfyl 00
+eno efyl delete cascade,
+pno prfyl OO(pnolon delete cascade,
+dno dptfy1001dno)on delete cascade,
+hrs number12)
+insert into wonfy100 values( 1.101 ,8):
+insert into wonfy 100 values(2.2.102.8);
+insert into wonfylOO values(2, I. 101.2):
+insert into wonfy 100 values(3.3.103.81:
+insert into wonfylOO values(44.103.8);
+insert into wonfy 100 valuest4.3, 103.2);
+insert into wonfyl 00 values(5.3.105.2);
+insert into wonfylOO 104.8):
+insert into wonfy100
+insert into wonfylCO values(5.5.105.2):
+insert into wonfy I OO 104. O);
+insert into wonfy 100 values(6.5.105.21:
+insert into wonfy 100 values(4.S.105.12);
+select •from wontyl 00;/seJect •from wonfy 100 order by dno:
+
+1)select distinct control.budget from pdyl 00 where budget>200000:
+CONTROL
+Ftr.,ance
+Account
+Finance
+BUDGET
+20000000
+1200000
+10000000
+220000
+400003
+
+2) 
+select prfyl 00.pname.pdy100.budgei.prfy10Ccontrol.dptfy100dno from
+ety100.prfy1Ø.dptty100.wonfy100 where efyl 00.eno•wonty100.en0 and
+and dptty100.dno=wonfy100.dno and dptfyl 00.dnoz102
+and ptfy 100 .budget>
+(seQt 100.budgetl from ety 100,pffy 100.dptfY 100 where
+1 OO_eno and prfy 100.pnozwonfyI 00, pno and
+dpttv and dpttylOO.dn0= 101) :
+PNAME
+BUDGET CONTROL ONO
+SAP
+Account 102
+
+3)select distinct prfYI 00.pname.prfYIOO.budget,prfyIOO.confr01.dpffyIOO.dno from
+where efy100.enozwonfy100.eno and
+prfy100.pnozwonfy100.pno and dptfyl 00.dnozwonfy100.dno and pdy100.budget=
+(select max(prty100.budget) from efyl 00.prfy100.dptfy100.wonfy100 where
+efyl 00.eno=wonfy100.eno and prfy100.pno=wonfy100.pno and
+dptfyl 00.dno=wonfy100.dno and prty100.budget<
+(select max(pdyl 00.budget) from prfyl 00)) :
+ML
+BUDGET CONTROL DNO
+10000000 Computer 104
+
+4 select distinct prfyl from
+efyl 00,prfy100,dptfy100,wonfy100 where efyl 00.eno=wonfy100.eno and
+prfyl 00.pno=wonfy100.pno and dptfyl 00.dno=wonfy100.dno and prfyl 00.budget =
+(select max(prfyl 00.budget) from efyl 00,prfy100,dptfy100,wonfy100 where
+efy100.eno=wonfy100.eno and prfy100.pno=wonfy100.pno and
+dptfyl 00.dno=wonfy100.dno and prfyl 00.budget
+< (select max(prfyl 00.budget) from prfyl 00 where prfyl 00.budget
+<(select max(prfyl 00.budget) from prfyl 00))) ;
+
+
+PNAME
+Work Capital
+Work Capital
+BUDGET CONTROL
+1200000 finance
+1200000 Finance
+ONO
+103
+105
+
+5) select efyl 00.ename,prfy100.pname from efyl where
+efy100.eno=wonfy100.eno and prfy100.pno=wonfy100.pno and
+dptfy100.dno=wonfy100.dno and prfyl 00.pname=
+(select prfyl 00.pname from efyl 00,prfy100,dptfy100,wonfy100 where
+efy100.eno=wonfy100.eno and prfy100.pno=wonfy100.pno and
+dptfyl 00.dno=wonfy100.dno and efyl 00.eno=3)
+
+
+6) select efyl 00.ename,prfy100.pname from efyl 00,prfy100,dptfy100,wonfy100 where
+efyl 00.eno=wonfy100.eno and prfyl 00.pno=wonfy100.pno and
+dptfy100.dno=wonfy100.dno and prfy100.pname!=
+
+(select distinct prfyl 00.pname from efyl 00,prfy100,dptfy100,wonfy100 where
+efyl 00.eno=wonfy100.eno and prfyl 00.pno=wonfy100.pno and
+dptfyl 00.dno=wonfy100.dno and efyl 00.eno=3)
+
+7)select efyl 00.ename,prfy100.pname,dptfy100.dname from
+efyl 00,prfy100,dptfy100,wonfy100 where efyl 00.eno=wonfy100.eno and
+prfyl 00.pno=wonfy100.pno and dptfyl 00.dno=wonfy100.dno and prfyl 00.pname!=
+
+(select distinct prfyl 00.pname from efyl 00,prfy100,dptfy100,wonfy100 where
+efy100.eno=wonfy100.eno and prfyl 00.pno=wonfy100.pno and
+dptfyl 00.dno=wonfy100.dno and dptfyl 00.dname='Account')
+
+8) select count(efyl 00.eno),prfy100.pname,prfy100.control from
+efyl 00,prfy100,dptfy100,wonfy100 where efyl 00.eno=wonfy100.eno and
+prfyl 00.pno=wonfy100.pno and dptfyl 00.dno=wonfy100.dno group by
+prfyl 00.pname,prfy100.control having count(efy23.eno)=1;
+9) select efyl 00.ename,wonfy100.hrs from efyl 00,prfy100,dptfy100,wonfy100 where
+efy100.eno=wonfy100.eno and prfyl 00.pno=wonfy100.pno and
+dptfyl 00.dno=wonfy100.dno and dptfyl 00.dname='Computer' and wonfyl 00.hrs> 10;
+
+ENAME
+HRS
+12
+
+IO) select distinct efyl 00.ename,dptfy100.dname,efy100.sal from
+efyl 00,prfy100,dptfy100,wonfy100 where efyl 00.eno=wonfy100.eno and
+prfyl 00.pno=wonfy100.pno and dptfyl 00.dno=wonfy100.dno and
+efy100.gender='Male' order by efyl 00.ename;
+
+11) select distinct efyl 00.ename,dptfy100.dname from
+efyl 00,prfy100,dptfy100,wonfy100 where efyl 00.eno=wonfy100.eno and
+prfyl 00.pno=wonfy100.pno and dptfyl 00.dno=wonfy100.dno and
+dptfyl 00.dname='Finance';
+
+12) select efy100.ename,efy100.addr from efy100 where efyl 00.addr not
+In (‘Pune’,’Mumbai’);
+
+
+
+
+SET. D
+create table movfy100(mno number(31 key,mname varchar2(
+number(
+insert all
+into movtY100 ,
+into movtylOO votues12'DDLG'.1986. I OOCOOCOO)
+into movmoo votues13,'K3G'.201
+into movfylOO
+into movfy 100
+into movfy 100
+select • from
+select • from movtyl00;
+create table acffy100(ano numbert3)primary key.aname varchar211 Slerole
+varchar2( 15J.chorge number( varcnar2( S) l;
+insert all
+into octyl 00 volves(l
+into octfy100
+into actfy 100 volves(3, 'Hri'ik
+into actfy 100
+3000COO,Mumb0i'J
+into octfyl 00 values(SKajol'.'ACfess
+30003T.'Mumban
+nto acttylOO valuest6.'Arnrish puri.Vi110in.
+into
+into
+select • from dual:
+select • trom octyl 00,
+create table prody100(pid rumber13)prirnary key.pname vorchar2( 1 5) .padc±
+varchar2( I
+hserf au
+into gyodfy ICO valuesli .Tn&a Kumar'.uumbai)
+into 00 valuesf2.•Yash Chopra'.•Mumbai')
+into prodty 100 values(3.'Yash Johor' , •Mumbai')
+into prodfylOO voboest4,'Bhatat
+into prodty 100 Roshan','Mumbai•)
+into prodfy ICO values16.•Ash0k
+select• from dud:
+selecf• from prodfyl 00:
+create table mapfyl 00
+mno number131references movfy OOIrnno)ON DELETE CASCADE.
+ano octfylOOlon010N DELETE CASCADE.
+pid number (31 references ptodty I DELETE CASCADE
+insert o"
+into mopfy ICO valLjeS( .2. I )
+into mapfy 100 valuesl 1.7.6)
+into mapfylOO vooes(2.1.21
+into mapfy 100 values(2S2)
+into mopfy 100 values12.6.2)
+into mapfYIOO veuest3. I .31
+into mapfy ICO values(3.3.3)
+into mapfy 100 values13.5.3J
+into mapfy 100 values141.31
+Tito mapfyl 00
+into moptylCO 1
+into mopfy100
+into mopfylCO values16,4.5)
+into mcpfylOO
+select • from dual:
+select • from mapty100:
+MNO ANO PID
+2
+
+
+1) select actfyl 00.aname,movfy100.mname from movfyl 00,actfyI 00 ,prodfyl 00,
+mapfy100 where movfy100.mno=mapfy100.mno and actfyl 00.ano=mapfy1 oo.ano
+and prodfy100.pid=mapfy100.pid and movfy100.mname
+order by movfyl 00.mname; 
+
+
+2)
+select mname,budget from movfy100 where budget=
+(select max(budget) from movfyl 00 );
+
+3)
+select mname,budget from movfyl 00 where budget=
+(select max(budget) from movfyl 00 where budget<
+(select max(budget) from movfyl 00) ); 
+
+4) select actfyl 00.aname,count(*) as Maximum_Worked_in_Film from
+movfyl 00,actfy100,prodfy100,mapfy100 where movfyl 00.mno=mapfy100.mno and
+actfy100.ano=mapfy100.ano and prodfyl 00.pid=mapfy100.pid group by
+actfy100.aname having count(*)=
+(select max(c)from
+(select count(movfyl 00.mno)as c from movfyl 00,actfy100,prodfy100,mapfy100
+where movfyl 00.mno=mapfy100.mno and actfy100.ano=mapfy100.ano and
+prodfyl 00.pid=mapfy100.pid group by actfyl 00.aname)); 
+
+5 select movfy100.mno,prodfy100.pname,movfy100.mname from
+where movfyl 00.mno=mapfy100.mno and
+actfy100.ano=mapfy100.ano and prodfyl 00.pid=mapfy100.pid and movfyl 00.mno=
+(select count(movfy100.mno) from movfy100 where mno=2); 
+
+6)
+select distinct actfyl 00.aname,actfy100.charge from movfyl where movfyl 00.mno=mapfy100.mno and actfy100.ano=mapfy100.ano and actfyl 00.charge=
+(select max(actfyl 00.charge) from actfyl 00);
+
+
+ 7)
+select distinct movfyl 00.mname,prodfy100.pname from
+movfy100,actfy100,prodfy100,mapfy100 where movfyl 00.mno=mapfy100.mno and
+actfy100.ano=mapfy100.ano and prodfyl 00.pid=mapfy100.pid and
+movfyl 00.mname='Dil';
+
+
+8) select aname,addr from actfyl 00 where addr!='Pune' and addr =’Mumbai’;
+
