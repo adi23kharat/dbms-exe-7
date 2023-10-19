@@ -1,12 +1,6 @@
 1)select prsn23.pname from prsn23,areafy100 where
 prsn23ano=areafy100.ano and areafy100.atype='Rural':
-PNAME
-Vishal
-Shekhar
-Surai
-Sarfrai
-Rahul
-Nilesh
+
 
 2)select from personfy100 where pname like
 MAX(PNAME)
